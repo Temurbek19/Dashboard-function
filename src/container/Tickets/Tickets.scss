@@ -1,0 +1,62 @@
+.tickets {
+    width: 100%;
+    &_allTickets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 32px;
+        padding-bottom: 0;
+        .allTickets {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            color: #252733;
+        }
+        .fiter-sort {
+            display: flex;
+            align-items: center;
+            .span {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #4B506D;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+            .sort {
+                margin-right: 34px;
+            }
+        }
+    }
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 32px;
+        border-bottom: 1.5px solid #DFE0EB;
+        span {
+            margin-right: 40px;
+            display: block;
+        }
+        .span1 {
+            width: 44%;
+        }
+        .span2 {
+            width: 30%;
+        }
+        .span3 {
+            width: 15%;
+        }
+        .span4 {
+            width: 11%;
+        }
+    }
+}

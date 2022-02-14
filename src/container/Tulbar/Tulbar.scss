@@ -1,0 +1,66 @@
+.tulbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+        h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            color: #252733;
+        }
+    }
+    &-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_icon {
+            position: relative;
+            display: flex;
+            align-items: center;
+            svg {
+                cursor: pointer;
+            }
+            .svg2 {
+                margin: 0 32px;
+            }
+            &::before {
+                content: "";
+                width: 1px;
+                height: 32px;
+                position: absolute;
+                right: 0;
+                background-color: #a5a7b6;
+            }
+        }
+        &_img {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 32px;
+                margin-right: 14px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+                letter-spacing: 0.2px;
+                color: #252733;
+            }
+            img {
+                width: 32px;
+                height: 32px;
+                padding: 2px;
+                border: 1.5px solid #c2c4d1;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover {
+                    border: 1.5px solid #c0917f;
+                }
+            }
+        }
+    }
+}
